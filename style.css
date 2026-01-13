@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: hsl(225, 100%, 94%);
+    font-family: Red Hat Display;
 }
 
 .container {
@@ -29,7 +30,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 p {
@@ -91,4 +92,50 @@ h1 {
 
 .change-text:active {
     opacity: 0.5;
+}
+
+button {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    width: 80%;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(0,0,0,0.2);
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+.cancel-text {
+    color: rgb(68, 68, 68);
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.cancel-text:hover {
+    opacity: 0.7;
+}
+
+.cancel-text:active {
+    opacity: 0.5;
+}
+
+@media (max-width: 500px) {
+    .main-container {
+        width: 300px;
+    }
+
+    .order-info {
+        gap: 20px;
+    }
 }
